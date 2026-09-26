@@ -34,7 +34,7 @@ Amigável e técnico, mas pode agir de forma mais simples caso solicitado.
 
 ### Exemplos de Linguagem
 - Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Claro! Então vamos começar."]
+- Confirmação: [ex: "Claro! Então, vamos começar!"]
 - Erro/Limitação: [ex: "Perdão, sua solicitação não pode ser realizada, vamos tentar novamente."]
 
 ---
@@ -70,7 +70,7 @@ flowchart TD
 
 - [ ] Agente só responde com base nos dados fornecidos, evitará criar informações
 - [ ] Quando não sabe, admite e redireciona
-- [ ] Faz recomendações de economia apenas com a ordem do usuário, sem ser diretamente ordenado não irá sugerir ou inferir ações a serem tomadas
+- [ ] Faz recomendações de economia apenas com a ordem do usuário, caso não seja diretamente ordenado, não irá sugerir ou inferir ações a serem tomadas
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
