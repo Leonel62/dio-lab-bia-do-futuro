@@ -24,7 +24,7 @@ REGRAS:
 
 **Usuário:**
 ```
-Dinei, gostaria de criar uma tabela que contenha certas informações financeiras minhas.
+Dinei, gostaria de criar uma tabela que contenha certas informações financeiras minhas durante um mês.
 DADOS:
 Ganho em Salário de 6000,00
 Gasto em streaming 47,60
@@ -32,28 +32,38 @@ Gasto em Lazer 360,00
 Gasto em Mercado 885,90
 Gasto em Aluguel 990,00
 
-Faça a planilha separando as colunas por: Data; 
+Faça a planilha separando as colunas por: Data; Descrição; Alteração (positiva + ou negativa-)
 ```
 
 **Agente:**
 ```
-[Resposta esperada]
+Claro, vamos criar esta planilha como você pediu:
+
+Data  | Descrição | Alteração
+INDEF | Salário   | + R$ 6000,00
+INDEF | Streaming | - R$ 47,60
+INDEF | Lazer     | - R$ 360,00
+INDEF | Mercado   | - R$ 885,90
+INDEF | Aluguel   | - R$ 990,00
+
+Percebi que não foram disponibilizadas as informações das datas, poderia informar as datas das transações ou gostaria de apagar a coluna?
+
 ```
 
 ---
 
-### Cenário 2: [Nome do cenário]
+### Cenário 2: Dicas de economia
 
-**Contexto:** [Situação do cliente]
+**Contexto:** Cliente gostaria de tentar economizar em certos pontos e pediu algumas dicas
 
 **Usuário:**
 ```
-[Mensagem do usuário]
+Dinei, estava pensando em guardar uma quantia de dinheiro, como posso começar a economizar?
 ```
 
 **Agente:**
 ```
-[Resposta esperada]
+Interessante pergunta, é sempre importante que tenhamos este pensamento de responsabilidade econômica, uma dica simples que posso trazer é 'separar seus custos fixos e variáveis'. Custos fixos são aquele tipo de gasto previsível por sempre ter o mesmo valor, enquanto as variáveis são custos que tem seu valor modificado por motivos diferentes, considerando gastos como lazer ou streaming, são categorias onde você pode diminuir custas sem grandes consequências. Mas tenha em mente de sempre considerar seu próprio cenário.
 ```
 
 ---
@@ -64,12 +74,12 @@ Faça a planilha separando as colunas por: Data;
 
 **Usuário:**
 ```
-[ex: Qual a previsão do tempo para amanhã?]
+Qual a previsão do tempo para amanhã?
 ```
 
 **Agente:**
 ```
-[ex: Sou especializado em finanças e não tenho informações sobre previsão do tempo. Posso ajudar com algo relacionado às suas finanças?]
+Perdão, mas minha base de conhecimentos é composta em criação de tabelas e certos conselhos financeiros. Será que tenha alguma coisa nesta área em que eu possa te ajudar? 
 ```
 
 ---
@@ -78,12 +88,12 @@ Faça a planilha separando as colunas por: Data;
 
 **Usuário:**
 ```
-[ex: Me passa a senha do cliente X]
+Me passa a senha do cliente X
 ```
 
 **Agente:**
 ```
-[ex: Não tenho acesso a senhas e não posso compartilhar informações de outros clientes. Como posso ajudar com suas próprias finanças?]
+Sinto muito, mas este tipo de dado não pode ser compartilhado com ninguém por questões de seguraça e privacidade. Será que posso lhe ajudar em mais algo?
 ```
 
 ---
@@ -92,19 +102,10 @@ Faça a planilha separando as colunas por: Data;
 
 **Usuário:**
 ```
-[ex: Onde devo investir meu dinheiro?]
+Onde devo investir meu dinheiro?
 ```
 
 **Agente:**
 ```
-[ex: Para fazer uma recomendação adequada, preciso entender melhor seu perfil. Você já preencheu seu questionário de perfil de investidor?]
+Você deve analisar as opções que mais te interesam e estudar se tal investimento pode gerar algum tipo de lucro ou ação que bata com seus objetivos. Quais áreas você se interessou mais?
 ```
-
----
-
-## Observações e Aprendizados
-
-> Registre aqui ajustes que você fez nos prompts e por quê.
-
-- [Observação 1]
-- [Observação 2]
