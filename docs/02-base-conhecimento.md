@@ -28,17 +28,19 @@ Existem duas possibilidades, injetar os dados diretamente no prompt ou carregar 
 import pandas as pd
 import json
 
-# CSVs
-transacoes = pd.read_csv('data/transacoes.csv')
-
 # JSONs
 with open('data/perfil_investidor.json', 'r', encoding='utf-8') as f:
     perfil = json.load(f)
+
+# CSVs
+transacoes = pd.read_csv('data/transacoes.csv')
 
 ```
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
+
+Para simplificar, podemos inserir os dados em nosso prompt, garantindo que o agente tenha o melhor contexto possível, lembrando que, em soluções mais robustas, o ideal é que essa informações sejam carregadas dinamicamente para que possamos ganhar flexibilidade.
 
 ```text
 DADOS DO CLIENTE E PERFIL:
@@ -67,7 +69,17 @@ DADOS DO CLIENTE E PERFIL:
 }
 
 TRANSAÇÕES DO CLIENTE:
-
+data,descricao,categoria,valor,tipo
+2025-10-01,Salário,receita,5000.00,entrada
+2025-10-02,Aluguel,moradia,1200.00,saida
+2025-10-03,Supermercado,alimentacao,450.00,saida
+2025-10-05,Serviço de streaming,lazer,55.90,saida
+2025-10-07,Farmácia,saude,89.00,saida
+2025-10-10,Restaurante,alimentacao,120.00,saida
+2025-10-12,Uber,transporte,45.00,saida
+2025-10-15,Conta de Luz,moradia,180.00,saida
+2025-10-20,Academia,saude,99.00,saida
+2025-10-25,Combustível,transporte,250.00,saida
 
 ```
 
@@ -75,16 +87,16 @@ TRANSAÇÕES DO CLIENTE:
 
 ## Exemplo de Contexto Montado
 
-> Mostre um exemplo de como os dados são formatados para o agente.
+O exemplo abaixo adapta os dados da base de conhecimento para apresentar as informações de forma simples, para que parte de sua estrutura possa ser visualizada.
 
 ```
 Dados do Cliente:
 - Nome: João Silva
-- Perfil: Moderado
 - Saldo disponível: R$ 5.000
 
 Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
+- 05/11: Salário - R$ 5000 - entrada
+- 10/11: Supermercado - R$ 450 - saída
+- 07/11: Streaming - R$ 55 - saída
 ...
 ```
