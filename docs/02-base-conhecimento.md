@@ -41,9 +41,12 @@ with open('data/perfil_investidor.json', 'r', encoding='utf-8') as f:
 > Os dados vão no system prompt? São consultados dinamicamente?
 
 ```text
-DADOS DO CLIENTE:
+DADOS DO CLIENTE E PERFIL:
+
 
 TRANSAÇÕES DO CLIENTE:
+
+
 ```
 
 ---
