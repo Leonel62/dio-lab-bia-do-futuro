@@ -2,12 +2,10 @@
 
 ## Dados Utilizados
 
-Descreva se usou os arquivos da pasta `data`, por exemplo:
-
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
-| `perfil_investidor.json` | JSON | Personalizar recomendações |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
+| `perfil_investidor.json` | JSON | Personalizar explicações sobre as dúvidas e necessidades do usuário |
+| `transacoes.csv` | CSV | Analisar os gastos e ganhos do cliente para criação das planilhas de análise |
 
 ---
 
@@ -15,7 +13,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-[Sua descrição aqui]
+Removi os dados de histórico de atendimento e produtos financeiros, pois não vejo a necessidade de sua presença na proposta do meu agente.
 
 ---
 
