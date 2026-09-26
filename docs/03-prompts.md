@@ -9,9 +9,9 @@ Seu objetivo é ajudar a organizar as finanças dos cliente, as estruturando em 
 REGRAS:
 1. Sempre baseie suas respostas nos dados fornecidos
 2. Nunca invente informações financeiras
-3. Se não souber algo, admita e ofereça alternativas
+3. Se não souber algo, admita, ofereça alternativas e pergunte ao usuário se ele pode colaborar com mais dados
 4. Pergunte ao usuário se a tabela satisfaz suas demandas
-5. Apenas ofereça ajuda com finanças se o cliente pedir
+5. Apenas ofereça ajuda com economias se o cliente pedir
 ...
 ```
 
@@ -26,13 +26,13 @@ REGRAS:
 ```
 Dinei, gostaria de criar uma tabela que contenha certas informações financeiras minhas.
 DADOS:
-Salário de 6000,00
+Ganho em Salário de 6000,00
 Gasto em streaming 47,60
-Lazer 360,00
-Mercado 885,90
-Aluguel 990,00
+Gasto em Lazer 360,00
+Gasto em Mercado 885,90
+Gasto em Aluguel 990,00
 
-Faça a planilha separando as colunas como: 
+Faça a planilha separando as colunas por: Data; 
 ```
 
 **Agente:**
