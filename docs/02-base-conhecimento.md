@@ -13,7 +13,7 @@
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-Removi os dados de histórico de atendimento e produtos financeiros, pois não vejo a necessidade de sua presença na proposta do meu agente.
+Removi os dados de histórico de atendimento e produtos financeiros, pois não vejo a necessidade de sua presença no que meu agente propõe.
 
 ---
 
@@ -22,12 +22,29 @@ Removi os dados de histórico de atendimento e produtos financeiros, pois não v
 ### Como os dados são carregados?
 > Descreva como seu agente acessa a base de conhecimento.
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+Existem duas possibilidades, injetar os dados diretamente no prompt ou carregar os arquivos via código, como no exemplo abaixo:
+
+```python
+import pandas as pd
+import json
+
+# CSVs
+transacoes = pd.read_csv('data/transacoes.csv')
+
+# JSONs
+with open('data/perfil_investidor.json', 'r', encoding='utf-8') as f:
+    perfil = json.load(f)
+
+```
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+```text
+DADOS DO CLIENTE:
+
+TRANSAÇÕES DO CLIENTE:
+```
 
 ---
 
